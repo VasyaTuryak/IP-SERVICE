@@ -19,7 +19,11 @@
 
 Мають бути підготовленні фабрики для наповнення БД. Проект має підніматись за декілька команд без зайвих налаштувань.
 
-##  Як запустити проект
+##  Як запустити проект ?
+Створюємо локально папку де буде зберігатись проект, ініціалізуємо ГІТ репо:
+```bash
+git init
+```
 Скачуємо проект:
 ```bash
 git pull https://github.com/VasyaTuryak/IP-SERVICE.git
@@ -28,7 +32,7 @@ git pull https://github.com/VasyaTuryak/IP-SERVICE.git
 ```bash
 docker compose up -d
 ```
-Далі заходимо в середину контейнера РНР
+Далі заходимо в середину контейнера РНР та запускаємо команду
 ```bash
 docker compose exec php bash
 ```
@@ -37,6 +41,7 @@ docker compose exec php bash
 bash start.sh
 ```
 Після чого проект готовий до роботи )))
+
 ##  POSTMAN
 Для тестування у POSTMAN можна використати колекцію `IP_Service.postman_collection.json`
 
