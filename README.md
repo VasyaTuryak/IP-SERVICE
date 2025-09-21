@@ -20,11 +20,23 @@
 Мають бути підготовленні фабрики для наповнення БД. Проект має підніматись за декілька команд без зайвих налаштувань.
 
 ##  Як запустити проект
-Check if containers are running:
+Скачуємо проект:
 ```bash
-docker-compose ps
+git pull https://github.com/VasyaTuryak/IP-SERVICE.git
 ```
-
+Відкриваємо у PHP Storm та запускаємо команду:
+```bash
+docker compose up -d
+```
+Далі заходимо в середину контейнера РНР
+```bash
+docker compose exec php bash
+```
+Далі запускаємо bash script
+```bash
+bash start.sh
+```
+Після чого проект готовий до роботи )))
 ##  POSTMAN
 Для тестування у POSTMAN можна використати колекцію `IP_Service.postman_collection.json`
 

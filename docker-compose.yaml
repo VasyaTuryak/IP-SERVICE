@@ -38,7 +38,7 @@ services:
       - "3308:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: database_vasya
+      MYSQL_DATABASE: database_ip_service
       MYSQL_USER: your_user
       MYSQL_PASSWORD: your_password
     volumes:
